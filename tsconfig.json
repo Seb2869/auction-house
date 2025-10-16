@@ -1,21 +1,19 @@
 {
   "compilerOptions": {
-    "target": "es2018",
+    "target": "ES2020",
     "module": "commonjs",
-    "moduleResolution": "node",
-    "importHelpers": true,
-    "declaration": true,
-    "sourceMap": true,
-    "strict": false,
+    "strict": true,
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
     "outDir": "dist",
-    "resolveJsonModule": true
+    "types": [
+      "node"
+    ]
   },
   "include": [
-    "./typechain",
-    "./addresses",
-    "index.ts"
-  ],
-  "files": ["./hardhat.config.ts"]
+    "scripts",
+    "test",
+    "hardhat.config.ts"
+  ]
 }
